@@ -1,0 +1,95 @@
+/* Navbar */
+.container-fluid{
+    padding: 10px;
+}
+
+.navbar{
+    font-size: 20px;
+    background-color: black;
+    margin: 0px;
+    padding: 0px;
+}
+
+.navbar-nav a{
+    color: white;
+    font-family: arial;
+    font-weight: bolder;
+    margin: 0px 10px;
+}
+
+.navbar-nav a:hover{
+    background-color: white;
+    color: black;
+}
+
+.navbar-brand{
+    color: white;
+    font-family: arial;
+    font-weight: bolder;
+}
+
+.navbar-brand:hover{
+    color: grey;
+}
+
+.navbar-nav{
+    margin-left: auto;
+    padding: 2px;
+}
+
+.navbar-toggler-icon i{
+    color: white;
+}
+
+.dropdown{
+    background: none;
+    color: white;
+}
+
+@media screen and (max-width: 576px){
+    .navbar-nav a:hover{
+        color: grey;
+        background-color: black;
+    }
+}
+
+
+.blue_button{
+    background: none repeat scroll 0 0 #468CD2;
+    border-bottom: 3px solid #3277BC;
+    text-shadow: 1px 1px 0 #214D73;
+    border: medium none;
+    border-radius: 0.3em;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-weight: bold;
+    margin: 10px 0;
+    padding: 7px 14px;
+}
+
+.frms input[type="text"], [type="password"], [type="file"], textarea, select {
+    background: none repeat scroll 0 0 #fff;
+    border: 1px solid #ddd;
+    border-radius: 0.35em;
+    height: 35px;
+    margin-bottom: 15px;
+    margin-top: 5px;
+    padding: 0 0.5%;
+    width: 99%;
+}
+
+.resp_code{
+    background: none repeat scroll 0 0 #f8f8f8;
+    border: 1px solid #ddd;
+    border-radius: 0.25em;
+    color: #333;
+    font: 1em/1.3em Tahoma,Geneva,sans-serif;
+    margin: 5px 10px 10px 20%;
+    overflow: auto;
+    padding: 10px 20px;
+    width:50%;
+}
+
+@media only screen and (max-width:650px) {.resp_code {margin: 5px 1px 10px !important;width:auto !important;}
+}
+ 

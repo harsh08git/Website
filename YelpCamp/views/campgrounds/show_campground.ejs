@@ -1,0 +1,79 @@
+<%- include('../partials/header.ejs') %>
+
+<div class='container'>
+	<div class='row'>
+		<div class='col-md-3'>
+			<div class='lead'>
+				<h3 class='display-lg-3 display-sm-4'>
+					YELPCAMP
+				</h3>			
+			</div>
+			<ul class='list-group'>
+				<li class='list-group-item active'>Trek 1</li>
+				<li class='list-group-item'>Trek 2</li>
+				<li class='list-group-item'>Trek 3</li>
+			</ul>
+		</div>
+		<div class='col-md-9'>
+			<div class='card'>
+				<img src='<%=campground.image%>' class='card-img-top'>
+				<div class='card-body'>
+					<div class='card-text'>
+						<h5 class='float-md-right'>
+							Rs. <%= campground.price %>
+						</h5>
+						<h4>
+							<a class='card-title' href='#'><%=campground.name %></a>	
+						</h4>
+					</div>
+					<p class='card-text'>
+						<%=campground.description%>
+					</p>
+					<p>
+						<em>Created by : <%=campground.author.username %></em>
+					</p>
+					
+					
+					<% if( current_user && campground.author.id.equals(current_user._id)){ %>
+						<a href='/campgrounds/<%=campground._id%>/edit' class='btn btn-warning'>Edit</a>
+						<form action='/campgrounds/<%=campground._id%>?_method=DELETE' method='POST' class='delbut'>
+							<input type='submit' class='btn btn-danger' value='Delete'>
+						</form>
+					<% } %>
+				</div>
+			</div>
+			<div class='card bg-light'>
+				<div class='text-right mt-2 mx-2'>
+					<a href='/campgrounds/<%=campground._id%>/comment/new' class='btn btn-primary'>Add Comment</a>			
+				</div>
+				<hr>
+					<div class='card-body'>
+						<% campground.comment.forEach(function(comment){ %>
+								<strong class='card-text'><%=comment.author.username%></strong>
+								<small><span class='float-right'>10 days ago</span></small>	
+							<p  class='card-text'>
+								<%=comment.text%>
+							</p>
+						
+							<% if(current_user && comment.author.id.equals(current_user._id)){ %>
+								<div>
+									<a href='/campgrounds/<%=campground._id%>/comment/<%=comment._id%>/edit' class='btn btn-									xs btn-warning'>Edit</a>
+									<form action='/campgrounds/<%=campground._id%>/comment/<%=comment._id%>?_method=DELETE' 									method='POST' class='delbut'>
+										<input type='submit' class='btn btn-xs btn-danger' value='Delete'>
+									</form>
+								</div>
+							<% } %>
+						<% })%>
+					</div>	
+			</div>
+		</div>
+	</div>
+</div>
+
+<p>
+	
+</p>
+<div class='comments'>
+	</div>
+
+<%- include('../partials/footer.ejs') %>

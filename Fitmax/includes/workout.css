@@ -1,0 +1,104 @@
+body{
+    background: black ;
+}
+
+/* Navbar */
+.container-fluid{
+    padding: 10px;
+}
+
+.navbar{
+    font-size: 20px;
+    background-color: black;
+    margin: 0px;
+    padding: 0px;
+}
+
+.navbar-nav a{
+    color: white;
+    font-family: arial;
+    font-weight: bolder;
+    margin: 0px 10px;
+}
+
+.navbar-nav a:hover{
+    background-color: white;
+    color: black;
+}
+
+.navbar-brand{
+    color: white;
+    font-family: arial;
+    font-weight: bolder;
+}
+
+.navbar-brand:hover{
+    color: grey;
+}
+
+.navbar-nav{
+    margin-left: auto;
+    padding: 2px;
+}
+
+.navbar-toggler-icon i{
+    color: white;
+}
+
+@media screen and (max-width: 576px){
+    .navbar-nav a:hover{
+        color: grey;
+        background-color: black;
+    }
+}
+
+#content{
+    display: block;
+    margin-top: 20px;
+}
+
+.mycard{
+    max-width: 30%;
+    border: 1px solid black;
+    float: left;
+    margin: 1.5%;
+}
+
+@media screen and (max-width: 725px){
+    .mycard{
+        float: left;
+        max-width: 42%;
+        margin: 3%;
+    }
+}
+
+.mycard img{
+    height: 350px;
+    width: 100%;
+    opacity: 0.2;
+}
+
+.mycard img:hover{
+    opacity: 1;
+}
+
+.mycontainer{
+    text-align: center;
+}
+
+.mycontainer h4{
+    font-size: 30px;
+    font-weight: bolder;
+    color: rgb(190, 187, 181);
+}
+
+.mycontainer a{
+    font-size: 20px;
+    color: rgba(51, 45, 45, 0.452);
+    text-decoration: none;
+}
+
+.mycontainer a:hover{
+    color: rgb(194, 105, 105);
+    text-decoration: underline;
+}

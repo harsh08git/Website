@@ -1,0 +1,161 @@
+body{
+	margin: 0;
+	padding: 0;
+}
+
+/* Navbar */
+.container-fluid{
+    padding: 10px;
+}
+
+.navbar{
+    font-size: 20px;
+    background-color: black;
+    margin: 0px;
+    padding: 0px;
+}
+
+.navbar-nav a{
+    color: white;
+    font-family: arial;
+    font-weight: bolder;
+    margin: 0px 10px;
+}
+
+.navbar-nav a:hover{
+    background-color: white;
+    color: black;
+}
+
+.navbar-brand{
+    color: white;
+    font-family: arial;
+    font-weight: bolder;
+}
+
+.navbar-brand:hover{
+    color: grey;
+}
+
+.navbar-nav{
+    margin-left: auto;
+    padding: 2px;
+}
+
+.navbar-toggler-icon i{
+    color: white;
+}
+
+@media screen and (max-width: 576px){
+    .navbar-nav a:hover{
+        color: grey;
+        background-color: black;
+    }
+}
+
+/*Creating the form section*/
+#detailsform{
+	background-color: rgb(0,0,0,0.8);
+	padding-bottom: 20px;
+}
+
+/*Styling the form section*/
+p{
+	font-size: 30px;
+	text-align: center;
+	color: white;
+	font-family: Impact; 
+}
+
+form{
+	border: 2px solid white;
+	padding: 40px 30px 10px 30px;
+	width:40%;
+	margin-left: 35%;
+} 
+
+@media screen and (max-width: 576px){
+	form{
+		border: 2px solid white;
+		padding: 40px 30px 10px 30px;
+		width:60%;
+		margin-left: 20%;
+	} 	
+}
+
+/*Styling all labels*/
+label{
+	color: white;
+	font-size: 20px;
+	font-family: Courier New;
+}
+
+/*Styling input boxes*/
+input,textarea{
+	max-width: 100%;
+}
+
+input[type=text],input[type=email]{
+	border-radius: 5px;
+	padding: 10px;
+	margin: 5px 0px 15px 0px;
+	color: rgb(193, 202, 202);
+	font-size: 15px; 
+	background: rgba(0,0,0,0.3);
+}
+
+input[type=number]{
+	border-radius: 5px;
+	padding: 10px;
+	margin: 5px 0px 5px 0px;
+	color: rgb(193, 202, 202);
+	font-size: 15px; 
+	background: rgba(0,0,0,0.3);
+}
+
+input[type=checkbox]{
+	margin: 5px; 
+}
+
+input[type=submit],input[type=reset]{
+	position: relative;
+	border-radius: 5px;
+	padding: 10px;
+	margin: 10px 0px 2px 40%;
+	color: rgb(193, 202, 202);
+	font-size: 15px; 
+	background: rgba(0,0,0,0.3);
+}
+
+input[type=submit]:focus{
+	position: relative;
+	border-radius: 5px;
+	padding: 10px;
+	margin: 10px 0px 2px 40%;
+	color: rgba(0,0,0,0.3);
+	font-size: 15px; 
+	background: rgb(193, 202, 202);
+}
+
+/*Styling the Textarea*/
+#msgbar{
+	display: block;
+	margin-top: 10px;
+}
+
+textarea{
+	font-size: 15px;
+	padding: 10px;
+	background: rgba(0,0,0,0.3);
+    color: rgb(193, 202, 202)	;
+}
+
+::placeholder{
+	color: white;
+	opacity: 0.2;
+	padding: 10px;
+};
+
+#connect{
+	margin-left: 100px;
+}

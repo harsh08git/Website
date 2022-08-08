@@ -1,0 +1,74 @@
+body{
+	background-color:black;
+}
+
+.header{
+	text-align:center;
+	color:white;
+	padding-top:40vh;
+	position:relative;
+	z-index:1;
+}
+
+.background-slider{
+	list-style-type:none;
+	margin:0;
+	padding:0;
+	z-index:0;
+	width:100%;
+	height:100%;
+	position:fixed;
+	top:0;
+	left:0;
+}
+
+.background-slider li{
+	width:100%;
+	height:100%;
+	position:absolute;
+	top:0;
+	left:0;
+	background-size:cover;
+	background-repeat:no-repeat;
+	background-position:center;
+	z-index:0;
+	opacity:0;
+	animation: imageAnimation 40s linear infinite;
+}
+
+.background-slider li:nth-child(1){
+	background-image:url('http://i.imgur.com/emvhOnb.jpg');
+}
+
+.background-slider li:nth-child(2){
+	background-image:url('http://i.imgur.com/K3mPv14.jpg');
+	animation-delay:10s;
+}
+
+.background-slider li:nth-child(3){
+	background-image:url('http://i.imgur.com/SBEmFpv.jpg');
+	animation-delay:20s;
+}
+
+.background-slider li:nth-child(4){
+	background-image:url('http://i.imgur.com/2LSMCmJ.jpg');
+	animation-delay:30s;
+}
+
+@keyframes imageAnimation{
+	0% {
+		opacity:0;
+	}
+	
+	12.5% {
+		opacity:1;
+	}
+	
+	25% {
+		opacity:1;
+	}
+	
+	37.5% {
+		opacity:0;
+	}
+}

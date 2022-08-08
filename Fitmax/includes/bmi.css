@@ -1,0 +1,74 @@
+body{
+	margin: 0;
+	padding: 0;
+}
+
+/* Navbar */
+.container-fluid{
+    padding: 10px;
+}
+
+.navbar{
+    font-size: 20px;
+    background-color: black;
+    margin: 0px;
+    padding: 0px;
+}
+
+.navbar-nav a{
+    color: white;
+    font-family: arial;
+    font-weight: bolder;
+    margin: 0px 10px;
+}
+
+.navbar-nav a:hover{
+    background-color: white;
+    color: black;
+}
+
+.navbar-brand{
+    color: white;
+    font-family: arial;
+    font-weight: bolder;
+}
+
+.navbar-brand:hover{
+    color: grey;
+}
+
+.navbar-nav{
+    margin-left: auto;
+    padding: 2px;
+}
+
+.navbar-toggler-icon i{
+    color: white;
+}
+
+@media screen and (max-width: 576px){
+    .navbar-nav a:hover{
+        color: grey;
+        background-color: black;
+    }
+}
+
+
+form{
+    width: 30%;
+    padding: 10px;
+    background: black;
+    margin: 30px 35%;
+    color: white;
+}
+
+@media screen and (max-width: 856px){
+    form{
+        width: 60%;
+        padding: 10px;
+        background: black;
+        margin: 30px 20%;
+        color: white;
+    }   
+}
+
